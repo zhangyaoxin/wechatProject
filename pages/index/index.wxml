@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+<view class='logo'>
+    <view class='wx_logo'>
+      <text class='logo_zh1'>农广</text>
+      <text class='logo_zh2'>传媒</text>
+      <text class='logo_en'>AGRI MEDIA</text>
+    </view>
+  </view>
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class="usermotto">
+    <view class="user-motto">{{motto}}</view>
+    <view class="user_hinttit">{{hinttit}}</view>
+    <view class="user_hinttit">{{hinttit1}}</view>{{defaultFont}}
+  </view>
+  <view class='put_text'>
+    <view class='inte_tel'>
+      <text class='label'>手机号</text>
+      <input type='text' class='put_tel'  placeholder='请输入手机号'></input>
+    </view>
+    <view class='inte_code'>
+      <text class='label'>验证码</text>
+      <input type='text' class='get_code' placeholder='请输入验证码'></input>
+      <text class='code_get'>获取验证码</text>
+    </view>
+  </view>
+  <view class='verify' bindtap='enterDetail'>进行验证</view>
+</view>

@@ -1,0 +1,202 @@
+<!--canceDetail.wxml-->
+<view class="body_detail"  style='height:{{bodyHeight}}px' >
+  <view class="cancedetail"  style='height:{{wrapperHeight}}px' wx:if="{{cancedetail}}" >
+    <view class='merchant'>商户名称</view>
+    <view class='merchant_name'>辛集农广饭庄</view>
+
+    <view class='coupon_list'>
+      <view class=''>
+        <view class='list_content'>
+          <view class='list_code'>
+            <image class='classify_image' src='../image/off_ident.png'></image>
+            <text class=''>ngcm32-12</text>
+          </view>
+          <view class='list_cont'>
+            <view class='list_cont_num'>
+              <view class=''><text class='list_cont_nutch'>20</text><text class='list_cont_money'>元</text></view>
+              <view class='list_cont_must'>满100可用</view>
+            </view>
+            <view class='list_cont_tit'>
+              <view class='list_cont_name'>小郊县农广饭店</view>
+              <view class='list_cont_time'>2018.05.04-2018.05.13</view>
+            </view>
+          </view>
+        </view>
+        <view class='list_bottom'>
+          <view class='list_bot_tit' data-code='0' bindtap='changeDetailShow'><text class=''>优惠券数据</text> <image class='list_bot_show' src='../image/show.png'></image></view>
+         <!-- 显示详情 -->
+          <block  wx:if='{{detailCont==="0"}}'>
+          <view class='list_bot_cont'>
+            <view class='num_cont'>
+              <text class='num_cont_cent'>1000</text>
+              <text class='num_cont_text'>已领取</text>
+            </view>
+            <view class='plan_cont'>
+              <view class='plan_cont_text'>
+                <view class='plan_text1'><text class='plan_text1_num'>3</text><text class='plan_text1_sen'>已核销(张)</text></view>
+                <view class='plan_text2'><text class='plan_text2_num'>1.30</text><text class='plan_text2_sen'>核销率(%)</text></view>
+              </view>
+              <view class='plan_block'>
+                <view class='plan_perform'></view>
+              </view>
+            </view>
+          </view>
+          </block>
+        </view>
+      </view>
+
+    </view>
+
+    <view class='coupon_list'>
+      <view class=''>
+        <view class='list_content'>
+          <view class='list_code'>
+            <image class='classify_image' src='../image/dis_ident.png'></image>
+            <text class=''>ngcm32-12</text>
+          </view>
+          <view class='list_cont'>
+            <view class='list_cont_num'>
+              <view class=''><text class='list_cont_nutch'>20</text><text class='list_cont_money'>元</text></view>
+              <view class='list_cont_must'>满100可用</view>
+            </view>
+            <view class='list_cont_tit'>
+              <view class='list_cont_name'>小郊县农广饭店</view>
+              <view class='list_cont_time'>2018.05.04-2018.05.13</view>
+            </view>
+          </view>
+        </view>
+        <view class='list_bottom'>
+          <view class='list_bot_tit' data-code='1' bindtap='changeDetailShow'><text class=''>优惠券数据</text> <image class='list_bot_show' src='../image/show.png'></image></view>
+          <block  wx:if='{{detailCont==="1"}}'>
+            <view class='list_bot_cont'>
+              <view class='num_cont'>
+                <text class='num_cont_cent'>1000</text>
+                <text class='num_cont_text'>已领取</text>
+              </view>
+              <view class='plan_cont'>
+                <view class='plan_cont_text'>
+                  <view class='plan_text1'><text class='plan_text1_num'>3</text><text class='plan_text1_sen'>已核销(张)</text></view>
+                  <view class='plan_text2'><text class='plan_text2_num'>1.30</text><text class='plan_text2_sen'>核销率(%)</text></view>
+                </view>
+                <view class='plan_block'>
+                  <view class='plan_perform'></view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    
+    <view class='coupon_list'>
+      <view class=''>
+        <view class='list_content'>
+          <view class='list_code'>
+            <image class='classify_image' src='../image/ent_ident.png'></image>
+            <text class=''>ngcm32-12</text>
+          </view>
+          <view class='list_cont'>
+            <view class='list_cont_num'>
+              <view class=''><text class='list_cont_kind'>早餐小米粥</text><text class='list_cont_unit'>一碗</text></view>
+              <view class='list_cont_must'>满0可用</view>
+            </view>
+            <view class='list_cont_tit'>
+              <view class='list_cont_name'>小郊县农广饭店</view>
+              <view class='list_cont_time'>2018.05.04-2018.05.13</view>
+            </view>
+          </view>
+        </view>
+        <view class='list_bottom'>
+          <view class='list_bot_tit' data-code='2' bindtap='changeDetailShow'><text class=''>优惠券数据</text> <image class='list_bot_show' src='../image/show.png'></image></view>
+          <block  wx:if='{{detailCont==="2"}}'>
+            <view class='list_bot_cont'>
+              <view class='num_cont'>
+                <text class='num_cont_cent'>1000</text>
+                <text class='num_cont_text'>已领取</text>
+              </view>
+              <view class='plan_cont'>
+                <view class='plan_cont_text'>
+                  <view class='plan_text1'><text class='plan_text1_num'>3</text><text class='plan_text1_sen'>已核销(张)</text></view>
+                  <view class='plan_text2'><text class='plan_text2_num'>1.30</text><text class='plan_text2_sen'>核销率(%)</text></view>
+                </view>
+                <view class='plan_block'>
+                  <view class='plan_perform'></view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+    </view>
+<!-- 
+    <view class='coupon_list'>
+      <view class=''>
+        <view class='list_content'>
+          <view class='list_code'>
+            <image class='classify_image' src='../image/ent_ident.png'></image>
+            <text class=''>ngcm32-12</text>
+          </view>
+          <view class='list_cont'>
+            <view class='list_cont_num'>
+              <view class=''><text class='list_cont_nutch'>20</text><text class='list_cont_money'>元</text></view>
+              <view class='list_cont_must'>满100可用</view>
+            </view>
+            <view class='list_cont_tit'>
+              <view class='list_cont_name'>小郊县农广饭店</view>
+              <view class='list_cont_time'>2018.05.04-2018.05.13</view>
+            </view>
+          </view>
+        </view>
+        <view class='list_bottom'>
+          <view class='list_bot_tit' data-code='3' bindtap='changeDetailShow'><text class=''>优惠券数据</text> <image class='list_bot_show' src='../image/show.png'></image></view>
+          <block  wx:if='{{detailCont==="3"}}'>
+            <view class='list_bot_cont'>
+              <view class='num_cont'>
+                <text class='num_cont_cent'>1000</text>
+                <text class='num_cont_text'>已领取</text>
+              </view>
+              <view class='plan_cont'>
+                <view class='plan_cont_text'>
+                  <view class='plan_text1'><text class='plan_text1_num'>3</text><text class='plan_text1_sen'>已核销(张)</text></view>
+                  <view class='plan_text2'><text class='plan_text2_num'>1.30</text><text class='plan_text2_sen'>核销率(%)</text></view>
+                </view>
+                <view class='plan_block'>
+                  <view class='plan_perform'></view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+    </view> -->
+    <view class='pad_bot'></view>
+  </view>
+  <view class='cleark_list' style='height:{{wrapperHeight}}px' wx:if="{{cleark_list}}">
+    <view class='cleark_detail'>
+      <image class='head_portrait' src='../image/cleark.png'></image>
+      <text class='cleark_name'>华邺</text>
+      <image class='delete_cleark' src='../image/delete.png'></image>
+    </view>
+  </view>
+  <view class='router_link'>
+    <view class='link_sec'>
+      <view class='link_opt' data-code='0' bindtap='showDetail'>
+        <image class='link_image' src='../image/marker_list.png' wx:if="{{cancedetail}}"></image>
+        <image class='link_image' src='../image/marker_list_active.png' wx:if="{{!cancedetail}}"></image>
+        <text class='link_txt'>核销明细</text>
+      </view>
+      <view class='link_opt' bindtap='showSys'>
+        <image class='sys_page' src='../image/sys_page.png'></image>
+        <image class='link_image sys_image'src='../image/sys_bg.png'></image>
+        <text class='link_txt sys_txt'>扫码核销</text>
+      </view>
+      <view class='link_opt' data-code='1' bindtap='showDetail'>
+        <image class='link_image' src='../image/cleark.png' wx:if="{{cleark_list}}"></image>
+        <image class='link_image' src='../image/cleark_active.png' wx:if="{{!cleark_list}}"></image>
+        <text class='link_txt'>店员管理</text>
+      </view>
+    </view>
+  </view>
+</view>

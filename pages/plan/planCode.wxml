@@ -1,0 +1,53 @@
+<!--planCode.wxml-->
+<view class='confirm' style='height:{{wrapperHeight}}px'>
+  <view class='coupon_chargeoff_detail'>
+    <image class='coupon_chargeoff_marking' src="../image/off_ident.png"></image>
+    <view class='coupon_chargeoff_det'>
+      <text class='coupon_chargeoff_tit'>小郊县农广饭店</text>
+      <text class='coupon_chargeoff_cont'>20元优惠劵</text>
+      <text class='coupon_chargeoff_time'>2018.05.04-2018.05.13</text>
+      <text class='coupon_chargeoff_num'>被领取 234张</text>
+    </view>
+    <view class='coupon_chargeoff_plan'>
+      <view class='coupon_chargeoff_plannum'>
+        <view class='coupon_planleft'>
+          <text class='coupon_chargeoff_plannumber'>3</text>
+          <text class='coupon_chargeoff_plannumtxt'>已核销(张)</text>
+        </view>
+        <view class='coupon_planright'>
+          <text class='coupon_chargeoff_plannumber'>1.30</text>
+          <text class='coupon_chargeoff_plannumtxt'>核销率(%)</text>
+        </view>
+      </view>
+      <view class='coupon_chargeoff_planbot'>
+        <view class='coupon_chargeoff_planbotcon'></view>
+      </view>
+    </view>
+  </view>
+  <view class='coupon_chargeoff_information'>
+    <view class='coupon_chargeoff_informationtext'>
+      <text>使用规则：</text>
+      <text>满100可用，不可累积</text>
+    </view>
+    <view class='coupon_chargeoff_informationtext'>
+      <text>商家电话：</text>
+      <text>13012341234</text>
+    </view>
+    <view class='coupon_chargeoff_informationtext'>
+      <text>商家地址：</text>
+      <text>无极县谈固北大街0723号底商</text>
+    </view>
+  </view>
+  
+  <view class='confrim_shade' wx:if="{{confirmBox}}" style='height:{{wrapperHeight}}px'></view>
+  <view class='confrim_view' wx:if="{{confirmBox}}">
+    <view class='confirm_text'>
+      <view class='confirm_text_tit'>确认核销</view>
+      <view class='confirm_text_cont'>确定核销此优惠券吗?</view>
+    </view>
+    <view class='confirm_btn'>
+      <text class='confirm_btn_close' bindtap='closed'>取消</text>
+      <text class='confirm_btn_asc' bindtap='confirm'>确定</text>
+    </view>
+  </view>
+</view>

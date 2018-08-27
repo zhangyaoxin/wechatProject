@@ -1,0 +1,174 @@
+/* pages/plan/planCode.wxss */
+.confirm{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 卡券详情 */
+.coupon_chargeoff_detail{
+  width: 690rpx;
+  margin: 50rpx auto 10rpx;
+  background: #fff;
+  box-shadow: 0 0 30rpx #ddd;
+  border-radius: 16rpx;
+  position: relative;
+  padding-top: 90rpx;
+}
+.coupon_chargeoff_marking{
+  position: absolute;
+  top: -20rpx;
+  left: 280rpx;
+  width: 130rpx;
+  height: 70rpx;
+  text-align: center;
+}
+.coupon_chargeoff_det{
+  text-align: center;
+  padding-bottom: 10rpx;
+  width: 400rpx;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #f4f4f4;
+}
+.coupon_chargeoff_tit{
+  display: block;
+  width: 100%;
+  font-size: 30rpx;
+  color: #5C5C5C;
+  line-height: 30rpx;
+}
+.coupon_chargeoff_cont{
+  display: block;
+  width: 100%;
+  font-size: 56rpx;
+  color: #5286EC;
+  line-height: 100rpx;
+}
+.coupon_chargeoff_time{
+  display: block;
+  width: 100%;
+  font-size: 26rpx;
+  color: #333333;
+  line-height: 40rpx;
+}
+.coupon_chargeoff_num{
+  display: block;
+  width: 100%;
+  font-size: 26rpx; 
+  color: #333333;
+  line-height: 40rpx;
+}
+
+.coupon_chargeoff_plan{
+  width: 400rpx;
+  padding: 40rpx 0 60rpx;
+  margin: 0 auto;
+}
+.coupon_chargeoff_plannum{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.coupon_planleft ,.coupon_planright{
+  width: 120rpx;
+}
+.coupon_chargeoff_plannumber{
+  font-size: 40rpx;
+  color: #5286EC;
+  line-height: 50rpx;
+  display: block;
+}
+.coupon_chargeoff_plannumtxt{
+  font-size: 20rpx;
+  color: #BCBCBC;
+  line-height: 24rpx;
+  display: block;
+}
+.coupon_chargeoff_planbot{
+  width: 100%;
+  opacity: 0.4;
+  background: #8BB3F4;
+  border-radius: 100rpx;
+  margin-top: 16rpx; 
+  height: 10rpx;
+}
+.coupon_chargeoff_planbotcon{
+  background: #5286EC;
+  height: 10rpx;
+  border-radius: 100rpx;
+  width: 2rpx;
+}
+
+.coupon_chargeoff_information{
+  width: 514rpx;
+  margin: 10rpx auto;
+  background: #fff;
+  box-shadow: 0 0 30rpx #ddd;
+  border-radius: 16rpx;
+  position: relative;
+  padding: 30rpx 88rpx;
+}
+.coupon_chargeoff_informationtext{
+  font-size: 28rpx;
+  color: #5C5C5C;
+  line-height: 50rpx;
+}
+
+/* 确定弹出框 */
+.confrim_view{
+  width: 540rpx;
+  background: #fff;
+  border-radius: 14rpx;
+  position: absolute;
+  left: 104rpx;
+  top: 380rpx;
+}
+.confirm_text{
+  border-bottom:  2rpx solid #f2f2f2;
+  padding-top: 42rpx; 
+}
+.confirm_text_tit{
+  font-size: 36rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42rpx;
+}
+.confirm_text_cont{
+  font-size: 30rpx;
+  color: #888888;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 88rpx;
+}
+
+.confirm_btn{
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.confirm_btn_close{
+  font-size: 36rpx;
+  color: #BCBCBC;
+  letter-spacing: 0;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+}
+.confirm_btn_asc{
+  font-size: 36rpx;
+  color: #5286EC;
+  letter-spacing: 0;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+}
+.confrim_shade{
+  width: 100%;
+  background: #000;
+  opacity: .3;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

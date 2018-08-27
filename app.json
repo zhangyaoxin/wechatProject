@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/canceDetail/canceDetail",
+    "pages/plan/planCode",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "农广传媒",
+    "navigationBarTextStyle":"black"
+  }
+}
