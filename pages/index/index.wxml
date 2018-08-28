@@ -7,13 +7,16 @@
       <text class='logo_en'>AGRI MEDIA</text>
     </view>
   </view>
-  <!-- <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
+   <view class="userinfo"  wx:if="{{!hasUserInfo && canIUse}}">
+    <view class='get_userinfo_text'>
+      农广传媒需要获取您的信息
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='get_userinfo'>确定</button>
+    </view>
+     <!-- <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view> -->
+    </block> -->
+  </view> 
   <view class="usermotto">
     <view class="user-motto">{{motto}}</view>
     <view class="user_hinttit">{{hinttit}}</view>

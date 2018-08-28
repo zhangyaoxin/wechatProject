@@ -164,6 +164,35 @@
   width: 50%;
   cursor: pointer;
 }
+.confirm_btns{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.confirm_btns_close{
+  font-size: 36rpx;
+  color: #5286EC;
+  letter-spacing: 0;
+  text-align: center;
+  width: 92%;
+  height: 88rpx;
+  background: #fff;
+  cursor: pointer;
+}
+.confirm_btns_asc{
+  font-size: 36rpx;
+  color: #fff;
+  background: #5286EC;
+  letter-spacing: 0;
+  text-align: center;
+  width: 92%;
+  cursor: pointer;
+  margin-bottom: 20rpx;
+  height: 88rpx;
+  margin-top: 80rpx;
+}
+.confirm_btns_asc::after{
+  border: #5286EC solid 2rpx;
+}
 .confrim_shade{
   width: 100%;
   background: #000;

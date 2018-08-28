@@ -1,5 +1,4 @@
 // pages/canceDetail/canceDetail.js
-//获取应用实例
 Page({
 
   /**
@@ -12,7 +11,8 @@ Page({
     detailCont:'',
     sysScanCode:'',
     cleark_list: false,
-    cancedetail: true
+    cancedetail: true,
+    markerList:''
   },
 
   /**
@@ -20,15 +20,14 @@ Page({
    */
   onLoad: function (options) {
     let that= this;
+    //设置页面初始高度
     let height = 0;
-    const app = getApp()//初始化实例
     //创建选择器
     let query = wx.createSelectorQuery();
     //选择元素
     query.select('.link_sec').boundingClientRect()
     query.exec(function (res) {
       //res就是 所有标签为mjltest的元素的信息 的数组
-      // console.log(res);
       //取高度
       // console.log(res[0].height);
         that.setData({ linkheight: res[0].height})
@@ -48,9 +47,8 @@ Page({
         }
       });
     });
-
-    //调用异步请求
-    that.markerList()
+    that.markerList();
+    //初始化卡券列表
   },
   //修改详情显示
   changeDetailShow: function (e) {
@@ -69,6 +67,7 @@ Page({
     }
     console.log(con)
   },
+  //唤起扫描二维码
   showSys: function () {
     let that = this
     wx.scanCode({
@@ -105,11 +104,10 @@ Page({
       })     
     }
   },
-
   //卡券列表
   markerList: function (e) {
     wx.request({
-      url: 'http://minrog.com', //接口地址 /wxpub/coupon_controller/showMyCoupon
+      url: '', //接口地址 https://api.agrimedia.cn /wxpub/coupon_controller/showMyCoupon
       // data: { },
       method: 'GET',
       header: {
@@ -136,6 +134,20 @@ Page({
 
       }
     })
+  },
+  //删除店员
+  delete: function(e){
+    wx.showModal({
+      title: '提示',
+      content: '确定要删除这名店员吗?',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })  
   }
 
 })

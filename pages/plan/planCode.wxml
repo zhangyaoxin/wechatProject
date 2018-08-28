@@ -38,6 +38,10 @@
       <text>无极县谈固北大街0723号底商</text>
     </view>
   </view>
+  <view class='confirm_btns'>
+    <button class='confirm_btns_asc' bindtap='confirm'>确认核销</button>
+    <button class='confirm_btns_close' bindtap='closed'>返回首页</button>
+  </view>
   
   <view class='confrim_shade' wx:if="{{confirmBox}}" style='height:{{wrapperHeight}}px'></view>
   <view class='confrim_view' wx:if="{{confirmBox}}">

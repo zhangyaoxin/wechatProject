@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/canceDetail/canceDetail",
     "pages/plan/planCode",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
